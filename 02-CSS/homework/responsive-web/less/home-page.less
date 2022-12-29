@@ -3,6 +3,12 @@
 .home {
 
   .intro {
+    color: @header-font-color;
+    img{
+      margin: 5px;
+      border-radius: 15px;
+      border-color: @main-border-color;
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +64,15 @@
       }
 
       .btn {
+        background: #000;
+        height: 35px;
+        width: 25%;
+        .displayed(flex, row);
+        justify-content: center;
+        align-items: center;
+        color: #ffff;
+        font-size: 16px;
+        border-radius: 8px;
       }
     }
 
