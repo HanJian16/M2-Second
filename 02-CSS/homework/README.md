@@ -4,9 +4,11 @@
 ---
 1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
 
-	* Framework
-	* Preprocesador
-	* Responsive website
+	* Framework: es una especie de plantilla, que te entrega una estructura base y objetos específicos para que te guíes y elabores tu proyecto.
+
+	* Preprocesador: Es un programa separado que se usa antes del trabajo "real" y sirve para preparar todas las herramientas o adaptar ciertas características que ayudarán a completar el trabajo necesitado.
+
+	* Responsive website: Un sitio o página web con la capacidad de responder a la interfaz del usuario y modificar su longitud al del dispositio del que se accede.
 
 
 2. Crear una Responsive Website según las siguientes indicaciones:
