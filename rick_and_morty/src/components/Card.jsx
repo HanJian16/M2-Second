@@ -6,9 +6,12 @@ const DivRow = styled.div`
    flex-direction: row;
 `;
 export default function Card(props) {
+   const onClick = () => {
+      props.onClose(props.id)
+   }
    return (
       <div className={cs.div}>
-         <button className={cs.button} onClick={props.onClose}>X</button>
+         <button className={cs.button} onClick={onClick}>X</button>
          <h2 className={cs.h2name}>{props.name}</h2>
          <DivRow>
             <h2 className={cs.h2}>{props.species}</h2>
