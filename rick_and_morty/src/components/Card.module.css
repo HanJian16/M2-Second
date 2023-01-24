@@ -24,7 +24,8 @@
   color: #fff;
   border-radius: 3px;
   padding: 2px;
-  margin: 290px 0 0 5px;
+  margin: -40px 0 0 5px;
+  max-width: 250px;
 }
 .h2{
   width: 50%;

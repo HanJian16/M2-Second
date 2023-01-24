@@ -2,6 +2,10 @@ import './App.css';
 import Nav from './components/Nav.jsx';
 import Cards from './components/Cards.jsx';
 import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import About from './components/About.jsx';
+import Detail from './components/Detail';
+import Error from './components/Error';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -23,12 +27,10 @@ function App() {
         }
       });
   }
-  //[]
   const onClose = (id) => {
     setCharacters(
       characters.filter((c, index) => id !== index)
     )
-    console.log(characters)
   }
   return (
     <div className='App'>
@@ -36,12 +38,16 @@ function App() {
         <Nav onSearch={onSearch} />
       </div>
       <hr />
-      <div>
-        <Cards
+      <Routes>
+        <Route path='home' element={<Cards
           characters={characters}
-          onClose={onClose}
-        />
-      </div>
+          onClose={onClose}/>}></Route>
+        <Route path='about' element={<About/>}></Route>
+        <Route path='detail'>
+          <Route path=':detailId' element={<Detail/>}></Route>
+        </Route>
+        <Route path='*' element={<Error/>}></Route>
+      </Routes>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import SearchBar from "./SearchBar";
 import css from './Nav.module.css';
+import { NavLink } from "react-router-dom";
 
 export default function Nav(props) {
   const onClick = () => {
@@ -8,6 +9,8 @@ export default function Nav(props) {
   }
   return (
     <div className={css.div}>
+      <NavLink className={css.navLink} to='/home'>Home</NavLink>
+      <NavLink className={css.navLink} to='/about'>About</NavLink>
       <button className={css.button} onClick={onClick}>Random</button>
       <SearchBar
         onSearch={props.onSearch}
