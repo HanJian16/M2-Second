@@ -1,0 +1,25 @@
+.divContainer{
+  background-color: #888;
+  width: 40%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.divLabel{
+  margin: 20px;
+}
+.label{
+  color: #fff;
+}
+.warning {
+  border: solid red 1px;
+  border-radius: 0.2em;
+}
+.danger {
+  font-size: 15px;
+  color: red;
+  margin-left: 10em;
+  text-align: center;
+}

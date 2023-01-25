@@ -9,6 +9,7 @@ export default function Nav(props) {
   }
   return (
     <div className={css.div}>
+      <button onClick={props.logout} className={css.button}>Logout</button>
       <NavLink className={css.navLink} to='/home'>Home</NavLink>
       <NavLink className={css.navLink} to='/about'>About</NavLink>
       <button className={css.button} onClick={onClick}>Random</button>
