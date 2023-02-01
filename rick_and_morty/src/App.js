@@ -7,6 +7,7 @@ import About from './components/About.jsx';
 import Detail from './components/Detail';
 import Error from './components/Error';
 import Form from './components/Form';
+import Favorites from './components/Favorite/Favorites.jsx';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -36,8 +37,8 @@ function App() {
   const location = useLocation();
   const navigate = useNavigate();
   const [access, setAccess] = useState(false);
-  const username = 'ejemplo@gmail.com';
-  const password = '1password';
+  const username = '1@1.com';
+  const password = '1';
 
   function login(userData) {
     if (userData.password === password && userData.username === username) {
@@ -63,6 +64,7 @@ function App() {
         <Route path='detail'>
           <Route path=':detailId' element={<Detail />}></Route>
         </Route>
+        <Route path='favorites' element={<Favorites/>}></Route>
         <Route path='*' element={<Error />}></Route>
         <Route path='/' element={<Form login={login} />}></Route>
       </Routes>
