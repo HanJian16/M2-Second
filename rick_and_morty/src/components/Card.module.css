@@ -6,16 +6,21 @@
   border-radius: 5px;
   margin: 15px;
 }
+.divButtons{
+  display: flex;
+  justify-content: space-between;
+}
 .img{
   display: flex;
-  order: -100;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .button{
-  order: -200;
-  margin: 5px 5px 5px 265px;
+  display: inline;
   background-color: #f00;
   color: #fff;
   border-radius: 3px;
+  margin: 5px;
 }
 .h2name{
   position: absolute;
@@ -30,4 +35,9 @@
 .h2{
   width: 50%;
   margin-bottom: 10px;
+}
+.buttonFav{
+  margin: 5px;
+  background: #fff;
+  border: none;
 }

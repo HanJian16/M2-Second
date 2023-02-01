@@ -1,0 +1,15 @@
+.divContainer{
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.div{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+}
